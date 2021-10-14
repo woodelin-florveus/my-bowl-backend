@@ -9,3 +9,5 @@
 
 
 user_1 = User.create(name:"Woodelin", email:"woodelinflorveus@hotmail.com", bio:"love to plan out my meal", image:"https://img1.10bestmedia.com/Images/Photos/376708/GettyImages-1140201336_54_990x660.jpg")
+
+byebug
