@@ -11,5 +11,11 @@
 
 
 #  user_1 = User.create(name:"Woodelin", email:"woodelinflorveus@hotmail.com", bio:"love to plan out my meal", image:"https://img1.10bestmedia.com/Images/Photos/376708/GettyImages-1140201336_54_990x660.jpg")
-byebug
+# BASE_URL='https://api.edamam.com/api/recipes/v2'
+# byebug
+# ENV["KEY"]
 
+response = RestClient.get('https://api.edamam.com/api/recipes/v2?type=public&q=Rice&app_id=6090520d&app_key=fc2479e493761476ddc23d7e0336f51b&ingr=1-4')
+recipe_array = JSON.parse(response)
+
+binding.pry
