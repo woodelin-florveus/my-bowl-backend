@@ -18,4 +18,9 @@
 response = RestClient.get('https://api.edamam.com/api/recipes/v2?type=public&q=Rice&app_id=6090520d&app_key=fc2479e493761476ddc23d7e0336f51b&ingr=1-4')
 recipe_array = JSON.parse(response)
 
+
 binding.pry
+
+recipe_array.each do |food|
+#   find specific arrray to go through 
+end
