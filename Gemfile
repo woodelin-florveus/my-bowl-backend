@@ -11,6 +11,8 @@ gem 'dotenv-rails'
 
 gem 'active_model_serializers', '~> 0.10.0'
 
+gem 'activerecord-reset-pk-sequence'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 # Use postgresql as the database for Active Record
