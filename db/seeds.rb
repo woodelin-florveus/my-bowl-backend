@@ -27,7 +27,7 @@
 
  meal_1 = Meal.create(title:"pasta", image:"", nutrition_info:"")
 
- meal_plan_1 = MealPlan.create(tit)
+ meal_plan_1 = MealPlan.create(title:"Morning Breakfast", image:"", user_id: user_1.id, meal_id: meal_1.id)
 
 
 

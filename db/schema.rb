@@ -25,8 +25,9 @@ ActiveRecord::Schema.define(version: 2021_10_14_001615) do
   end
 
   create_table "meals", force: :cascade do |t|
-    t.string "title"
+    t.string "name"
     t.string "image"
+    t.integer "calories"
     t.string "nutrition_info"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
