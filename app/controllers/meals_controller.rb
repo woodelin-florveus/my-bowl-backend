@@ -1,7 +1,16 @@
 class MealsController < ApplicationController
 
     def index        
-        @Meal = Meal.all        
+        @Meals = Meal.all  
+        
+        render json: @meals
+    end
+
+
+    def show 
+        @meal = Meal.find(params[:id])
+
+        render json: @meal
     end
 
 
