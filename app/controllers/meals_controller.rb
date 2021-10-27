@@ -1,7 +1,7 @@
 class MealsController < ApplicationController
 
     def index        
-        @Meals = Meal.all  
+        @meals = Meal.all  
         
         render json: @meals
     end

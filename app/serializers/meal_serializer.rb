@@ -1,5 +1,5 @@
 class MealSerializer < ActiveModel::Serializer
-  attributes :id, :title, :image, :nutrition_info
+  attributes :id, :name, :image, :calories, :nutrition_info
 
-  has_many :meal_plans
+  # has_many :meal_plans
 end
