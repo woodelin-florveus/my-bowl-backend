@@ -2,6 +2,16 @@ class Meal < ApplicationRecord
     has_many :meal_plans
     has_many :users, through: :meal_plans
 
+include PgSearch
+
+pg_search_scope :search_by_term, against: [:title, :content],
+        using: {
+            tsearch: {
+                any_word: true, 
+                prefix: true
+            }
+        }
+
     def self.get_data
         safeUrl = URI.encode("https://api.edamam.com/api/food-database/v2/parser?app_id=#{ENV["RECIPE_ID"]}&app_key=#{ENV["KEY"]}&ingr=Rice&nutrition-type=cooking".strip)
         response = RestClient.get(safeUrl)
