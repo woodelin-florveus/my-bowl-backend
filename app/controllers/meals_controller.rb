@@ -8,7 +8,9 @@ class MealsController < ApplicationController
 
     def search
         # @meals = Meal.search_by_term(params[:query])
-        @meals = Meal.all
+        @meals = Meal.search_by_term(params[:query])
+
+        byebug
         render json: @meals
     end
     
@@ -18,10 +20,5 @@ class MealsController < ApplicationController
         @meal = Meal.find(params[:id])
         render json: @meal
     end
-
-    def search
-        # make API Search call 
-    end
-
 
 end
