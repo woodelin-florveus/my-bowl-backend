@@ -12,3 +12,9 @@ class Meal < ApplicationRecord
         end
     end
 end
+
+
+# https://api.edamam.com/api/food-database/v2/parser?app_id=aa81c12d&app_key=2856f570215c5c70fbeb33c508e4c436&nutrition-type=cooking
+
+# "https://api.edamam.com/api/food-database/v2/parser?app_id=aa81c12d&app_key=2856f570215c5c70fbeb33c508e4c436&ingr=#{request}&nutrition-type=cooking
+# "

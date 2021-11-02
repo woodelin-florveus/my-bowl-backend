@@ -1,9 +1,15 @@
 class MealsController < ApplicationController
 
-    def index        
-        @meals = Meal.all  
+    # def index        
+    #     @meals = Meal.all  
         
-        render json: @meals
+    #     render json: @meals
+    # end
+
+    def index
+        @conn = Faraday.get("https://api.edamam.com/api/food-database/v2/parser?app_id=#{ENV["RECIPE_ID"]}&app_key=#{ENV["KEY"]}&ingr=Rice&nutrition-type=cooking")
+        binding.pry
+
     end
 
 
