@@ -7,8 +7,8 @@ class MealsController < ApplicationController
     end
 
     def search
-        @meals = Meal.search_by_term(params[:query])
-        bindind.pry
+        # @meals = Meal.search_by_term(params[:query])
+        @meals = Meal.all
         render json: @meals
     end
     

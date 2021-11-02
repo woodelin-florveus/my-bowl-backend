@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  get 'search', to: 'meals#search', as: 'search'
+
   resources :meals
   resources :meal_plans
   resources :users
