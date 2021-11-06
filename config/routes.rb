@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  
+  get '/meals/search', to: "meals#search"
 
   resources :meals
   resources :meal_plans

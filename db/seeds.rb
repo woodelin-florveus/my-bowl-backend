@@ -9,8 +9,9 @@ Meal.reset_pk_sequence
 MealPlan.reset_pk_sequence
 
 
-
+# add user get more specific and edit along the way 
 Meal.get_data
+# add joiner 
 
 
 
